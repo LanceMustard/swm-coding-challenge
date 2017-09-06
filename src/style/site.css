@@ -1,0 +1,156 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	display: block;
+}
+
+h1 {
+	margin-bottom: 5px;
+}
+
+
+h2 {
+	color: #4c4c4c;
+	font-size: large;
+}
+
+/*-----------------------------------------------------------------------------
+ General
+-----------------------------------------------------------------------------*/
+
+.Page {
+	text-align: left;
+}
+
+.PageHeader {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: white;
+	height: 100px;
+	padding: 20px;
+}
+
+.PageLogo {
+	height: 80px;
+}
+
+.PageLink {
+   	color: black;
+	text-decoration: none;
+}
+
+.PageLink img {
+	border: 2px solid transparent;
+}
+
+.PageLink:hover {
+	color: blue;
+}
+
+.PageLink:hover > img { 
+	border: 2px solid blue;
+}
+
+.BackButton {
+	padding-left: 20px;
+}
+
+/*-----------------------------------------------------------------------------
+ HomePage
+-----------------------------------------------------------------------------*/
+
+.HomePage {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+/*-----------------------------------------------------------------------------
+ Videos
+-----------------------------------------------------------------------------*/
+
+.VideoList {
+	width: calc(20vw - 40px);
+}
+
+.VideoImage {
+	width: 60vw;	
+}
+
+/*-----------------------------------------------------------------------------
+ Stories
+-----------------------------------------------------------------------------*/
+
+.StoryList {
+	width: calc(80vw - 60px);
+	padding-left: 20px;
+}
+
+.StoryCardList {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.StoryCard {
+	width: 210px;
+	margin: 20px 20px 20px 0;
+}
+
+.StoryCardImage {
+	height: 140px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.Story {
+}
+
+.StoryContent {
+	padding: 20px 10% 0 10%;
+}
+
+.StoryImage {
+	height: 140px;
+	width: 260px;
+	float: left;
+	padding: 0px 20px 20px 0px;
+
+}
+
+/*-----------------------------------------------------------------------------
+ Mobile support
+-----------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+	.PageHeader {
+	    padding: 0;
+	}
+	.PageLogo {
+		width: 100%;
+	}
+	.PageLogoLink {
+		width: 100%;
+	}
+	.VideoList {
+	    width: 100vw;
+	    padding: 0;
+	}
+	.StoryList {
+		width: 100vw;
+		padding: 0;
+	}
+	.StoryCardList {
+		justify-content: center;
+	}
+	.Story {
+		padding-top: 20px;
+	}
+	.StoryContent {
+	    padding: 0;
+	}
+	.BackButton {
+		padding-left: 0px;
+	}
+}
